@@ -55,13 +55,12 @@ body{
 }
 
 #login-area{
-    border: 5px solid #2a05cf;
+    border-top: 5px solid #2a05cf;
     border-radius: 15px;
-	margin: 30px 450px;
-	padding: 10px;
+	margin: 10%;
 }
 #submitButton{
-	padding: 1px 185px;	
+	padding: 1px 48%;	
 }
 #login-area{
     display: none;
