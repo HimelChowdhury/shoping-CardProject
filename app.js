@@ -52,14 +52,14 @@ const gTotal = totalPrice + tax;
 }
 
 document.getElementById('romove-phone').addEventListener('click', function(){
-  document.getElementById('phn-input').value = 1;
-   document.getElementById('phn-price').innerText = 1399;
+  document.getElementById('phn-input').value = 0;
+   document.getElementById('phn-price').innerText = 1300;
 
   grandTotal()
 })
 
 document.getElementById('remove-caseing').addEventListener('click', function(){
-  document.getElementById('case-input').value = 1;
+  document.getElementById('case-input').value = 0;
    document.getElementById('case-price').innerText = 75;
    
    grandTotal()
