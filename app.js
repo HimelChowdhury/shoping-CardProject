@@ -15,19 +15,17 @@ if(incrace===true){
 
   const phonePrice = document.getElementById(  product+ "-price");
   const priceNum = parseInt(phonePrice.innerText);
-  // const 
+  
  
 if(product == "phn"){
-  priceNumber = 1300 * inputNumber;
+  priceNumber = 1399 * inputNumber;
 }
 if (product == "case"){
   priceNumber = 75 * inputNumber;
 }
   phonePrice.innerText = priceNumber;
   grandTotal();
-  // document.getElementById("bankAccount").value = 1600;
   
-
  }
 //case Handle
  
@@ -45,26 +43,28 @@ const tax = Math.floor(totalPrice * 0.1);
 document.getElementById("tax-amount").innerText = tax;
 const gTotal = totalPrice + tax;
  document.getElementById("grand-total").innerText = gTotal;
- document.getElementById("bankAccount").value = gTotal;
+ document.getElementById("bankAccount").value = gTotal; //Grand total ammount go to total amount of bank card
 
 
 
 }
+// cross part
 
 document.getElementById('romove-phone').addEventListener('click', function(){
   document.getElementById('phn-input').value = 0;
-   document.getElementById('phn-price').innerText = 1300;
+   document.getElementById('phn-price').innerText = 0;//
 
   grandTotal()
 })
 
 document.getElementById('remove-caseing').addEventListener('click', function(){
   document.getElementById('case-input').value = 0;
-   document.getElementById('case-price').innerText = 75;
+   document.getElementById('case-price').innerText = 0//
    
    grandTotal()
 
 })
+// product card none bank card block
 document.getElementById("addButton").addEventListener("click", function(){
   document.getElementById("login-area").style.display = "block"
 
